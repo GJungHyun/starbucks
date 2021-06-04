@@ -107,25 +107,6 @@ new Swiper('.awards .swiper-container', {
 });
 
 
-
-// 둥둥 뜨는 동그라미
-function random(min, max) {
-  return parseFloat((Math.random() * (max - min) + min).toFixed(2))
-}
-function floatingObject(selector, delay, size) {
-  gsap.to(selector, random(1.5, 2.5), {
-    y: size,       // y축
-    repeat: -1,   // 무한 반복(gsap라이브러리에선 -1이 무한임)
-    yoyo: true,   //요요 다시 돌아가는
-    ease: Power1.easeInOut,
-    delay: random(0, delay)
-  });
-}
-floatingObject('.floating1', 1, 15);
-floatingObject('.floating2', .5, 15);
-floatingObject('.floating3', 1.5, 20);
-
-
 // SCROLL MAGIC
 const spyEls = document.querySelectorAll('section.scroll-spy');
 spyEls.forEach(function (spyEl) {

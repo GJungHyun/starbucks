@@ -1,46 +1,51 @@
 /* VISUAL */
 .visual {
-  margin-top: 120px;
+  margin-top: 100px;
   background-image: url("../images/visual_bg.jpg");
-  background-position: center;
+  background-position: cover;
 }
 .visual .inner {
-  height:646px;
+  height: 646px;
 }
 .visual .title {
   position: absolute;
   top: 88px;
-  left: -10px;
+  left: 0px;
 }
 .visual .title .btn {
   position: absolute;
-  top: 259px;
-  left: 173px;
+  top: 350px;
+  left: 0;
 }
 .visual .cup1.image {
   position: absolute;
-  bottom: 0;
-  right: -47px;
+  top: 270px;
+  left: 400px;
 }
 .visual .cup1.text {
   position: absolute;
-  top: 38px;
-  right: 171px;
+  top: 170px;
+  left: 410px;
 }
 .visual .cup2.image {
   position: absolute;
-  bottom: 0;
-  right: 162px;
+  bottom: 130px;
+  right: -30px;
 }
 .visual .cup2.text {
   position: absolute;
-  top: 321px;
-  right: 416px;
+  bottom: 45px;
+  right: 260px;
 }
-.visual .spoon {
+.visual .cup3.image {
   position: absolute;
-  bottom: 0;
-  left: 275px;
+  top: 260px;
+  right: -180px;
+}
+.visual .cup3.text {
+  position: absolute;
+  top: 170px;
+  right: 45px;
 }
 /* 애니매이션을 주기 위해 img를 div로 다 감싸고 opacity 0 - 보여지는 건 자바스크립트로 */
 .visual .fade-in {
@@ -212,19 +217,9 @@
 .rewards {
   position: relative;
 }
-.rewards .bg-left{
-  width: 50%; height: 100%;
-  background: #272727;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.rewards .bg-right{
-  width: 50%; height: 100%;
-  background: #d5c798;
-  position: absolute;
-  top: 0;
-  right: 0;
+.rewards .bg{
+  width: 100%; height: 100%;
+  background: #1e3932;
 }
 .rewards .inner {
   background: url(../images/rewards.jpg);
@@ -235,118 +230,59 @@
   display: flex;
   flex-wrap: wrap;
   position:absolute;
-  bottom: 24px;
-  right: 0;
+  bottom: 40px;
+  right: 20px;
 }
 .rewards .btn-group .btn.sign-up {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 .rewards .btn-group .btn.sign-in {
   width: 120px;
 }
 .rewards .btn-group .btn.gift {
-  margin-top: 10px;
-  flex-grow: 1;
+  margin-top: 40px;
+  width: 230px;
 }
 
-
-/* YOUTUBE VIDEO */
-.youtube {
-  position: relative;
-  height: 700px;
-  background: #333;
-  overflow: hidden;
-}
-.youtube .youtube__area {
-  width: 1920px;
-  background: orange;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: calc(1920px / -2);
-  margin-top: calc(1920px * 9 / 16 / -2);
-}
-.youtube .youtube__area::before {
-  content: "";
-  display: block;
-  width:100%;
-  padding-top: 56.25%;
-}
-.youtube .youtube__cover {
-  width: 100%; height:100%;
-  background-image: url("../images/video_cover_pattern.png");
-  background-color: rgba(0,0,0,.3);
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-#player {
-  width: 100%; height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-/* 둥둥 뜨는 거 */
-.youtube .inner {
-  height: 700px;
-}
-.youtube .floating1 {
-  position: absolute;
-  top: 50px;
-  left: 0;
-}
-.youtube .floating2 {
-  position: absolute;
-  top: 350px;
-  left: 150px;
-}
 
 /* SEASON PRODUCT */
 .season-product {
   background: url("../images/season_product_bg.jpg");
 }
 .season-product .inner {
-  height: 400px;
+  height: 573px;
 }
-.season-product .floating3 {   /* 둥둥 뜨는 거2 */
+.season-product .inner > img {
   position: absolute;
-  top: -200px;
-  right: 0;
+  top: 70px;
+  left: 200px;
 }
 .season-product .text-group {
   position: absolute;
-  top: 110px;
-  right: 100px;
+  top: 150px;
+  right: 150px;
 }
 .season-product .text-group .title {
-  margin-bottom: 10px;
-}
-.season-product .text-group .description {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 
 /* RESERVE COFFEE */
 .reserve-coffee {
-  background: url("../images/reserve_bg.jpg");
+  background: #eccfaf url("../images/reserve_bg.png") center/cover;
 }
 .reserve-coffee .inner {
   height: 400px;
 }
-.reserve-coffee .reserve-logo {
-  position: absolute;
-  top: 110px;
-  left: 0;
-}
 .reserve-coffee .text-group {
   position: absolute;
   top: 124px;
-  left: 200px;
+  left: 0;
 }
-.reserve-coffee .product {
+.reserve-coffee .text-group .more {
   position: absolute;
-  top: 0;
-  right: 0;
+  bottom: -40%;
+  left: 50%;
 }
 
 
@@ -368,6 +304,16 @@
 }
 .pick-your-favorite .text-group .description {
   margin-bottom: 40px;
+}
+.pick-your-favorite .btn {
+  width: 130px;
+  border-radius: 3px;
+}
+
+.pick-your-favorite .inner > img {
+  position: absolute;
+  top: 15%;
+  right: -50px;
 }
 
 
@@ -432,11 +378,11 @@
   right: 0;
 }
 .find-store .picture {
-  border-radius: 50%;
-  box-shadow: 2px 2px 8px rgba(0,0,0,.5);
   position: absolute;
 }
 .find-store .picture1 {
+  border-radius: 50%;
+  box-shadow: 2px 2px 8px rgba(0,0,0,.5);
   top: -60px;
   left: 0;
 }

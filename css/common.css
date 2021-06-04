@@ -19,13 +19,13 @@ a {
 }
 /* BUTTON */
 .btn {
-  width: 120px;
-  padding: 10px;
+  width: 130px;
+  padding: 8px;
   border: 2px solid #333;
-  border-radius: 5px;
+  border-radius: 3px;
   color: #333;
-  font-size: 16px;
-  font-weight: 700;
+  background: transparent;
+  font-size: 15px;
   text-align: center;
   box-sizing: border-box;
   cursor: pointer;
@@ -33,40 +33,47 @@ a {
   transition: .3s;
 }
 .btn:hover {
-  background: #333;
-  color: #fff;
+  background: rgb(255,255,255,.4);
+  font-weight: 700;
+  text-decoration: underline;
 }
 .btn.btn--reverse {
-  background: #333;
+  width: 110px;
+  background: #00704a;
   color: #fff;
+  border: 2px solid #00704a;
+  border-radius: 5px;
 }
 .btn.btn--reverse:hover {
-  background: transparent;
-  color: #333;
+  text-decoration: underline;
 }
 .btn.btn--brown {
-  color: #592b18;
-  border-color: #592b18;
+  color: #815932;
+  border-color: #815932;
 }
 .btn.btn--brown:hover {
   color: #fff;
-  background: #592b18;
+  background: #815932;
+  text-decoration: underline;
 }
-.btn.btn--gold {
-  color: #d9aa8a;
-  border-color: #d9aa8a;
+.btn.btn--dark {
+  color: #231815;
+  background: transparent;
+  border: 2px solid #231815;
 }
-.btn.btn--gold:hover {
+.btn.btn--dark:hover {
   color: #fff;
-  background: #d9aa8a;
+  background: #231815;
+  text-decoration: underline;
 }
 .btn.btn--white {
+  width: 100px;
   color: #fff;
   border-color: #fff;
+  border-radius: 5px;
 }
 .btn.btn--white:hover {
-  color: #333;
-  background: #fff;
+  text-decoration: underline;
 }
 /* SCROLL MAGIC */
 .back-to-position {
@@ -99,7 +106,7 @@ a {
 /* HEADER */
 header {
   background: #f6f5f0;
-  border-bottom: 1px solid #c8c8c8;
+  border-bottom: 1px solid #e9e9e9;
   width: 100%;
   position: fixed;
   top: 0;
@@ -246,11 +253,11 @@ header .main-menu .item .item__contents .contents__explain p {
   color: #669900;
   margin: 4px 0 14px;
 }
-
+/* BADGES */
 header .badges {
   position: absolute;
-  top: 135px;
-  right: 15px;
+  top: 150px;
+  right: 250px;
 }
 header .badges .badge {
   border-radius: 10px;
@@ -301,6 +308,8 @@ footer .btn-group {
 footer .btn-group .btn {
   font-size: 12px;
   margin-right: 10px;
+  width: 130px;
+  border-radius: 3px;
 }
 footer .btn-group .btn:last-child {
   margin: 0;
